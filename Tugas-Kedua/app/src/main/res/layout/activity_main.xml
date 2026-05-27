@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#FFFFFF">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator Sederhana : Felix"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="32dp"/>
+    <EditText
+        android:id="@+id/etNilaiA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai Pertama (A)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/etNilaiB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai Kedua (B)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="32dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tambah"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kali"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bagi"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textSize="14sp"
+        android:textColor="#9E9E9E"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#212121"/>
+
+</LinearLayout>
